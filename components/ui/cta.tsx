@@ -3,11 +3,16 @@ import { cn } from '@/helpers';
 import { forwardRef } from 'react';
 
 export interface CTAContainerProps
-  extends React.HTMLAttributes<HTMLDivElement> { }
+  extends React.HTMLAttributes<HTMLDivElement> {
+}
 export interface CTAHeadlineProps
-  extends React.HTMLAttributes<HTMLHeadingElement> { }
+  extends React.HTMLAttributes<HTMLHeadingElement> {
+  sectionTheme?: "light" | "dark";
+}
 export interface CTADescriptionProps
-  extends React.HTMLAttributes<HTMLParagraphElement> { }
+  extends React.HTMLAttributes<HTMLParagraphElement> {
+  sectionTheme?: "light" | "dark";
+}
 export interface CTAListProps extends React.HTMLAttributes<HTMLDivElement> { }
 
 export const CTAContainer = forwardRef<HTMLDivElement, CTAContainerProps>(
@@ -28,12 +33,13 @@ export const CTAContainer = forwardRef<HTMLDivElement, CTAContainerProps>(
 CTAContainer.displayName = 'CTAContainer';
 
 export const CTAHeadline = forwardRef<HTMLHeadingElement, CTAHeadlineProps>(
-  ({ className, ...args }, ref) => {
+  ({ className, sectionTheme = "light", ...args }, ref) => {
     return (
       <h2
         ref={ref}
         className={cn(
           'cta-headline leading-snug text-3xl font-semibold w-[20ch] max-lg:text-center max-lg:w-full',
+          sectionTheme === "dark" && "text-white",
           className,
         )}
         {...args}
@@ -47,12 +53,13 @@ CTAHeadline.displayName = 'CTAHeadline';
 export const CTADescription = forwardRef<
   HTMLParagraphElement,
   CTADescriptionProps
->(({ className, ...args }, ref) => {
+>(({ className, sectionTheme = "light", ...args }, ref) => {
   return (
     <p
       ref={ref}
       className={cn(
         'cta-description leading-7 text-base text-neutral-500 w-[36ch] max-lg:text-center max-lg:w-full max-lg:text-base',
+        sectionTheme === "dark" && "text-neutral-400",
         className,
       )}
       {...args}
