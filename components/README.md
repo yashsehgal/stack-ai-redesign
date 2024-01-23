@@ -19,15 +19,17 @@ The `/sections` folder contains components that represent larger sections or mod
 ## How to Use
 
 1. **UI Components:**
-    - Navigate to the `/ui` folder.
-    - Choose the desired component.
-    - Integrate it into your project by importing the component and incorporating it into your code.
+
+   - Navigate to the `/ui` folder.
+   - Choose the desired component.
+   - Integrate it into your project by importing the component and incorporating it into your code.
 
 2. **Layout Components:**
-    - Explore the `/layouts` folder.
-    - Select the appropriate layout component for your page or section.
-    - Customize the layout by adjusting the component's properties and styles.
+
+   - Explore the `/layouts` folder.
+   - Select the appropriate layout component for your page or section.
+   - Customize the layout by adjusting the component's properties and styles.
 
 3. **Section Components:**
-    - Check the `/sections` folder for specific sections or modules.
-    - Incorporate these components into your pages to build comprehensive sections of your application.
+   - Check the `/sections` folder for specific sections or modules.
+   - Incorporate these components into your pages to build comprehensive sections of your application.
