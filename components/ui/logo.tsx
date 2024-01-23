@@ -3,7 +3,7 @@ import { cn } from '@/helpers';
 import Image from 'next/image';
 import { forwardRef } from 'react';
 
-export interface LogoProps extends React.ImgHTMLAttributes<HTMLImageElement> { }
+export interface LogoProps extends React.ImgHTMLAttributes<HTMLImageElement> {}
 
 export const StackAILogo = forwardRef<HTMLImageElement, LogoProps>(
   ({ className, ...args }, ref) => {

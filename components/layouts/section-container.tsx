@@ -1,7 +1,7 @@
 import { cn } from '@/helpers';
 import { forwardRef } from 'react';
 
-interface SectionContainerProps extends React.HTMLAttributes<HTMLDivElement> { }
+interface SectionContainerProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 const SectionContainer = forwardRef<HTMLDivElement, SectionContainerProps>(
   ({ className, children, ...props }, ref) => {

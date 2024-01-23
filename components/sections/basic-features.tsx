@@ -40,16 +40,14 @@ const BasicFeatureList: FeatureContentProps[] = [
 export default function BasicFeatureSection() {
   return (
     <SectionContainer id="features">
-      <ViewContainer className='flex flex-row items-start justify-between max-lg:grid max-lg:gap-24 max-xl:relative'>
-        <CTAContainer className='max-xl:sticky max-xl:top-12 max-lg:top-0 max-lg:relative'>
-          <CTAHeadline>
-            Unlock AI Innovation Without Code
-          </CTAHeadline>
+      <ViewContainer className="flex flex-row items-start justify-between max-lg:grid max-lg:gap-24 max-xl:relative">
+        <CTAContainer className="max-xl:sticky max-xl:top-12 max-lg:top-0 max-lg:relative">
+          <CTAHeadline>Unlock AI Innovation Without Code</CTAHeadline>
           <CTADescription>
-            Create advanced applications with our no-code platform,
-            featuring pre-built templates, enterprise-grade security,
-            and expert white-glove support. Experience the simplified
-            power of AI in just a few clicks.
+            Create advanced applications with our no-code platform, featuring
+            pre-built templates, enterprise-grade security, and expert
+            white-glove support. Experience the simplified power of AI in just a
+            few clicks.
           </CTADescription>
           <CTAList>
             <Button size="lg" withArrow>
