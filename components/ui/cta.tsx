@@ -16,7 +16,7 @@ export const CTAContainer = forwardRef<HTMLDivElement, CTAContainerProps>(
       <div
         ref={ref}
         className={cn(
-          'cta-container flex flex-col items-start gap-4',
+          'cta-container flex flex-col items-start gap-4 max-md:grid max-md:items-center',
           className,
         )}
         {...args}
@@ -33,7 +33,7 @@ export const CTAHeadline = forwardRef<HTMLHeadingElement, CTAHeadlineProps>(
       <h2
         ref={ref}
         className={cn(
-          'cta-headline leading-snug text-3xl font-semibold w-[20ch]',
+          'cta-headline leading-snug text-3xl font-semibold w-[20ch] max-lg:text-center max-lg:w-full',
           className,
         )}
         {...args}
@@ -52,7 +52,7 @@ export const CTADescription = forwardRef<
     <p
       ref={ref}
       className={cn(
-        'cta-description leading-7 text-base text-neutral-500 w-[36ch]',
+        'cta-description leading-7 text-base text-neutral-500 w-[36ch] max-lg:text-center max-lg:w-full max-lg:text-base',
         className,
       )}
       {...args}
@@ -68,7 +68,7 @@ export const CTAList = forwardRef<HTMLDivElement, CTAListProps>(
       <div
         ref={ref}
         className={cn(
-          'cta-list-wrapper flex flex-row items-center gap-3 justify-start mt-4',
+          'cta-list-wrapper flex flex-row items-center gap-3 justify-start mt-4 max-lg:justify-center max-lg:w-full max-md:grid max-md:justify-normal',
           className,
         )}
         {...args}

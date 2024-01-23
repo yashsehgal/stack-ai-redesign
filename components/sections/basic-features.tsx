@@ -57,7 +57,7 @@ export default function BasicFeatureSection() {
             </Button>
           </CTAList>
         </CTAContainer>
-        <div className="feature-content-grid grid grid-cols-2 items-start gap-12 max-xl:grid-cols-1 max-lg:grid-cols-2 max-md:grid-cols-1">
+        <div className="feature-content-grid grid grid-cols-2 items-start gap-12 max-xl:grid-cols-1 max-lg:grid-cols-2 max-md:grid-cols-1 max-lg:w-fit max-lg:mx-auto">
           {BasicFeatureList.map(
             (feature: FeatureContentProps, index: number) => {
               return <FeatureCard {...feature} key={index} />;
