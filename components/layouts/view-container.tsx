@@ -1,7 +1,7 @@
 import { cn } from '@/helpers';
 import { forwardRef } from 'react';
 
-interface ViewContainerProps extends React.HTMLAttributes<HTMLDivElement> { }
+interface ViewContainerProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 const ViewContainer = forwardRef<HTMLDivElement, ViewContainerProps>(
   ({ className, children, ...props }, ref) => {
@@ -20,7 +20,7 @@ const ViewContainer = forwardRef<HTMLDivElement, ViewContainerProps>(
   },
 );
 
-ViewContainer.displayName = "ViewContainer";
+ViewContainer.displayName = 'ViewContainer';
 
 export { ViewContainer };
 
