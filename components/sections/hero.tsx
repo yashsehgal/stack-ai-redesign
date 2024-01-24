@@ -26,7 +26,7 @@ export default function HeroSection() {
     <SectionContainer id="hero" className="pb-12">
       <ViewContainer>
         <div
-          className="announcement-cta-wrapper pl-3 pr-1 py-1 text-sm bg-neutral-100 border w-fit rounded-full flex flex-row items-center gap-2 cursor-pointer mx-auto mb-8"
+          className="announcement-cta-wrapper pl-3 pr-1 py-1 text-sm bg-neutral-100 hover:bg-neutral-200/60 border w-fit rounded-full flex flex-row items-center gap-2 cursor-pointer mx-auto mb-8"
           onClick={() =>
             window.open('https://www.stack-ai.com/blog/ai-assistants')
           }>
@@ -39,6 +39,10 @@ export default function HeroSection() {
           The No-Code <br />
           Generative AI Platform
         </h1>
+        <p className='text-center text-neutral-500 mt-6'>
+          Deploy custom AI Assistants, Chatbots, and Workflow Automations<br />
+          to make your company 10x more efficient.
+        </p>
         <CTAList className="justify-center mt-12 max-md:mt-6">
           <Button size="lg" variant="gloss" withArrow className="">
             Start Building for free
