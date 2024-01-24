@@ -23,19 +23,27 @@ git clone https://github.com/yashsehgal/stack-ai-redesign.git
 ### Navigate to the Project Directory
 
 ```
-cd your-nextjs-repo
+cd stack-ai-redesign
 ```
 
 ### Install Dependencies
 
 ```
-npm install
+yarn
 ```
 
 ### Run the Development Server
 
 ```
-npm run dev
+yarn dev
+```
+
+### Code formatting using prettier
+
+After writing some code, make sure the apply prettier code formatting before pushing changes.
+
+```
+yarn run lint-fix
 ```
 
 ### Access the application
