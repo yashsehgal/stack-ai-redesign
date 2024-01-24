@@ -39,8 +39,9 @@ export default function HeroSection() {
           The No-Code <br />
           Generative AI Platform
         </h1>
-        <p className='text-center text-neutral-500 mt-6'>
-          Deploy custom AI Assistants, Chatbots, and Workflow Automations<br />
+        <p className="text-center text-neutral-500 mt-6">
+          Deploy custom AI Assistants, Chatbots, and Workflow Automations
+          <br />
           to make your company 10x more efficient.
         </p>
         <CTAList className="justify-center mt-12 max-md:mt-6">
