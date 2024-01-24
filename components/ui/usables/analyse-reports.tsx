@@ -139,7 +139,7 @@ function AnalyzedAssistantScreen({
   return (
     <div className="h-full items-center justify-center relative">
       <motion.div
-        id="assistant-welcome-text-block"
+        id="assistant-revenue-comparison-text-block"
         className={cn(
           'px-6 py-3 text-sm text-white w-[80%] rounded-2xl bg-gradient-to-b from-neutral-700 to-neutral-900 shadow-2xl',
         )}
