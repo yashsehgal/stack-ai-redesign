@@ -2,7 +2,7 @@
 
 ![](./public/github/github-banner.png)
 
-## Deployed using vercel
+## Deployed using vercel ▲
 
 Landing page is live at [stack-ai-redesign.vercel.app](https://stack-ai-redesign.vercel.app/)
 
