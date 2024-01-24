@@ -87,7 +87,7 @@ export default function HowToUseSection() {
             with our user-friendly tools and interfaces.
           </CTADescription>
         </CTAContainer>
-        <div className="how-to-use-steps-content-container mt-12 flex flex-row items-center justify-between max-xl:flex-col-reverse max-xl:gap-12">
+        <div className="how-to-use-steps-content-container mt-12 flex flex-row items-center justify-between max-xl:flex-col-reverse max-xl:gap-12 gap-6">
           <div className="how-to-use-steps-list-wrapper flex flex-col gap-4 items-start max-xl:grid max-xl:grid-cols-2 max-xl:gap-12 max-lg:hidden max-lg:mt-12 max-lg:w-fit max-lg:mx-auto">
             {HowToUseStepsList.map(
               (
@@ -151,7 +151,7 @@ export default function HowToUseSection() {
               },
             )}
           </div>
-          <div className="step-content-video-wrapper w-fit bg-gradient-to-b from-blue-600 to-pink-600 flex flex-row items-center justify-center p-6 rounded-xl h-auto">
+          <div className="step-content-video-wrapper w-fit bg-gradient-to-b from-neutral-100 to-white flex flex-row items-center justify-center p-8 rounded-xl h-auto shadow-inner">
             {step === 'build' && (
               <video
                 width="600"
@@ -159,6 +159,7 @@ export default function HowToUseSection() {
                 autoPlay
                 loop
                 muted
+                className='shadow-xl rounded-lg'
                 onError={(e) =>
                   console.error(
                     'video in how-to-use section is not rendering',
@@ -178,6 +179,7 @@ export default function HowToUseSection() {
                 autoPlay
                 loop
                 muted
+                className='shadow-xl rounded-lg'
                 onError={(e) =>
                   console.error(
                     'video in how-to-use section is not rendering',
@@ -197,6 +199,7 @@ export default function HowToUseSection() {
                 autoPlay
                 loop
                 muted
+                className='shadow-xl rounded-lg'
                 onError={(e) =>
                   console.error(
                     'video in how-to-use section is not rendering',
@@ -213,6 +216,7 @@ export default function HowToUseSection() {
                 autoPlay
                 loop
                 muted
+                className='shadow-xl rounded-lg'
                 onError={(e) =>
                   console.error(
                     'video in how-to-use section is not rendering',
