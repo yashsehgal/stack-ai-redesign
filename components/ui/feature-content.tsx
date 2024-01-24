@@ -40,7 +40,7 @@ export const FeatureCard = forwardRef<HTMLDivElement, FeatureContentProps>(
         <div className={cn(direction === 'vertical' && 'mt-4')}>
           <h3
             className={cn(
-              'feature-card-title text-xl font-medium max-lg:text-center',
+              'feature-card-title text-xl font-medium max-lg:text-center max-lg:w-fit max-lg:mx-auto',
               sectionTheme === 'dark' && 'text-white',
             )}>
             {title}
@@ -48,7 +48,7 @@ export const FeatureCard = forwardRef<HTMLDivElement, FeatureContentProps>(
           {description && (
             <p
               className={cn(
-                'feature-card-description text-sm text-neutral-500 leading-6 max-lg:text-center max-lg:w-[28ch] mt-2',
+                'feature-card-description text-sm text-neutral-500 leading-6 max-lg:text-center max-lg:w-[28ch] max-lg:mx-auto mt-2',
               )}>
               {description}
             </p>

@@ -5,7 +5,7 @@ import { forwardRef } from 'react';
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary';
+  variant?: 'primary' | 'secondary' | 'gloss';
   size?: 'md' | 'lg';
   withArrow?: boolean;
 }
@@ -30,6 +30,8 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           // variant styles
           variant === 'primary' &&
             'bg-gradient-to-b from-neutral-600 to-neutral-900 text-white shadow-md hover:brightness-125',
+          variant === 'gloss' &&
+            'bg-gradient-to-b from-blue-400 to-blue-600 text-white shadow-md hover:brightness-125',
           variant === 'secondary' &&
             'bg-white hover:bg-neutral-50 text-black border',
           // size styles
