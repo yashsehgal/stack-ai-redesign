@@ -5,7 +5,7 @@
 ## Folder Structure
 
 ```
-project-root/
+(root)/
 ├── components/
 │   └── sections/
 │       ├── basic-features.tsx

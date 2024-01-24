@@ -66,6 +66,7 @@ export default function HeroSection() {
               transform: `rotateX(${tiltDegree}deg)`,
               transition: 'transform 0.3s ease-out',
             }}
+            priority
           />
         </div>
       </ViewContainer>

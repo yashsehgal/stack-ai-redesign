@@ -7,7 +7,7 @@ This folder contains various components that are crucial to the structure and de
 ## Folder Structure
 
 ```
-project-root/
+(root)/
 ├── components/
 │   ├── ui/
 │   │   ├── usables/

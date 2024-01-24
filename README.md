@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# stack-ai-redesign
+
+![](./public/github/github-banner.png)
+
+## Deployed using vercel
+
+Landing page is live at [stack-ai-redesign.vercel.app](https://stack-ai-redesign.vercel.app/)
+
+## Description
+
+This is a redesign of [Stack AI](https://stack-ai.com)'s landing page with new components and new approaches.
+
+Design Engineer Role Assignment by [Yash Sehgal](https://yashsehgal.com)
 
 ## Getting Started
 
-First, run the development server:
+### Clone the reposistory
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+git clone https://github.com/yashsehgal/stack-ai-redesign.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Navigate to the Project Directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+cd your-nextjs-repo
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Install Dependencies
 
-## Learn More
+```
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Run the Development Server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Access the application
 
-## Deploy on Vercel
+Open your web browser and visit http://localhost:3000 to see your Next.js app running locally.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Now you have your Next.js project set up on your local machine, and you can start making changes or additions to the code.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Project Structure
+
+```stack-ai-redesign/
+├── components/
+│   ├── ui/
+│   │   ├── usables/
+│   │   │   └── (usable component files)
+│   │   ├── bento-card.tsx
+│   │   ├── button.tsx
+│   │   ├── cta.tsx
+│   │   ├── feature-card.tsx
+│   │   ├── feature-icon.tsx
+│   │   ├── logo.tsx
+│   │   ├── navigation-menu.tsx
+│   │   └── index.tsx
+│   ├── sections/
+│   │   ├── basic-features.tsx
+│   │   ├── data-loaders.tsx
+│   │   ├── features-bento.tsx
+│   │   ├── hero.tsx
+│   │   ├── how-to-use.tsx
+│   │   ├── models-used.tsx
+│   │   ├── navbar.tsx
+│   │   ├── security.tsx
+│   │   └── index.tsx
+│   └── layouts/
+│       ├── section-container.tsx
+│       ├── view-container.tsx
+│       └── index.tsx
+├── helpers/
+│   ├── utils.ts
+│   └── index.ts
+├── app/
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── pages/
+│   └── index.js
+├── public/
+│   └── ...
+├── styles/
+│   └── ...
+├── .gitignore
+├── package.json
+└── README.md
+```
