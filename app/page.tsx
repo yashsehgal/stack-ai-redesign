@@ -1,9 +1,9 @@
 'use client';
 import BasicFeatureSection from '@/components/sections/basic-features';
+import DataLoadersSection from '@/components/sections/data-loaders';
 import HowToUseSection from '@/components/sections/how-to-use';
 import ModelsUsedSection from '@/components/sections/models-used';
 import SecuritySection from '@/components/sections/security';
-import { FeatureIcon } from '@/components/ui';
 
 export default function LandingPage() {
   return (
@@ -12,6 +12,7 @@ export default function LandingPage() {
       <HowToUseSection />
       <ModelsUsedSection />
       <SecuritySection />
+      <DataLoadersSection />
     </div>
   );
 }
