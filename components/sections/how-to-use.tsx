@@ -11,8 +11,17 @@ import {
 } from '../ui';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
 export type StepType = 'build' | 'export' | 'logs' | 'manage';
+
+const StepVideo = {
+  build: 'build-tab.webm',
+  export: 'export-tab.webm',
+  logs: 'logs-tab.webm',
+  manage: 'manager-tab.webm',
+};
+
 const HowToUseStepsList: Array<FeatureContentProps & { option: StepType }> = [
   {
     option: 'build',
@@ -47,6 +56,7 @@ const HowToUseStepsList: Array<FeatureContentProps & { option: StepType }> = [
 export default function HowToUseSection() {
   const [step, setStep] = useState<StepType>('build');
   const [screenWidth, setScreenWidth] = useState<number>(0);
+  const router = useRouter();
 
   useEffect(() => {
     const updateScreenWidth = () => {
@@ -77,8 +87,8 @@ export default function HowToUseSection() {
             with our user-friendly tools and interfaces.
           </CTADescription>
         </CTAContainer>
-        <div className="how-to-use-steps-content-container mt-12 flex flex-row items-center justify-between">
-          <div className="how-to-use-steps-list-wrapper flex flex-col gap-4 items-start max-xl:grid max-xl:grid-cols-2 max-xl:gap-12 max-md:hidden max-lg:mt-12 max-lg:w-fit max-lg:mx-auto">
+        <div className="how-to-use-steps-content-container mt-12 flex flex-row items-center justify-between max-xl:flex-col-reverse max-xl:gap-12">
+          <div className="how-to-use-steps-list-wrapper flex flex-col gap-4 items-start max-xl:grid max-xl:grid-cols-2 max-xl:gap-12 max-lg:hidden max-lg:mt-12 max-lg:w-fit max-lg:mx-auto">
             {HowToUseStepsList.map(
               (
                 stepItem: FeatureContentProps & { option: StepType },
@@ -112,19 +122,109 @@ export default function HowToUseSection() {
               },
             )}
           </div>
-          <div className="how-to-use-steps-list-wrapper flex-row items-center justify-center gap-4 hidden max-md:flex w-full">
+          <div className="how-to-use-steps-list-wrapper flex-row items-center justify-center gap-4 hidden max-lg:flex w-full">
             {HowToUseStepsList.map(
               (
                 stepItem: FeatureContentProps & { option: StepType },
                 index: number,
               ) => {
-                return <button key={index} className={cn("flex flex-col items-center gap-3 cursor-pointer select-none hover:brightness-100")}
-                  onClick={() => setStep(stepItem.option)}
-                >
-                  <FeatureIcon icon={stepItem.icon} className='w-16 h-16 hover:scale-95 transition-all active:scale-90' />
-                  <p className={cn("text-white", step === stepItem.option && "text-blue-500")}>{stepItem.title}</p>
-                </button>
-              })}
+                return (
+                  <button
+                    key={index}
+                    className={cn(
+                      'flex flex-col items-center gap-3 cursor-pointer select-none hover:brightness-100',
+                    )}
+                    onClick={() => setStep(stepItem.option)}>
+                    <FeatureIcon
+                      icon={stepItem.icon}
+                      className="w-16 h-16 hover:scale-95 transition-all active:scale-90"
+                    />
+                    <p
+                      className={cn(
+                        'text-white',
+                        step === stepItem.option && 'text-blue-500',
+                      )}>
+                      {stepItem.title}
+                    </p>
+                  </button>
+                );
+              },
+            )}
+          </div>
+          <div className="step-content-video-wrapper w-fit bg-gradient-to-b from-blue-600 to-pink-600 flex flex-row items-center justify-center p-6 rounded-xl h-auto">
+            {step === 'build' && (
+              <video
+                width="600"
+                height="300"
+                autoPlay
+                loop
+                muted
+                onError={(e) =>
+                  console.error(
+                    'video in how-to-use section is not rendering',
+                    e,
+                  )
+                }>
+                <source
+                  src={`/media/videos/build-tab.webm`}
+                  type="video/webm"
+                />
+              </video>
+            )}
+            {step === 'export' && (
+              <video
+                width="600"
+                height="300"
+                autoPlay
+                loop
+                muted
+                onError={(e) =>
+                  console.error(
+                    'video in how-to-use section is not rendering',
+                    e,
+                  )
+                }>
+                <source
+                  src={`/media/videos/export-tab.webm`}
+                  type="video/webm"
+                />
+              </video>
+            )}
+            {step === 'logs' && (
+              <video
+                width="600"
+                height="300"
+                autoPlay
+                loop
+                muted
+                onError={(e) =>
+                  console.error(
+                    'video in how-to-use section is not rendering',
+                    e,
+                  )
+                }>
+                <source src={`/media/videos/logs-tab.webm`} type="video/webm" />
+              </video>
+            )}
+            {step === 'manage' && (
+              <video
+                width="600"
+                height="300"
+                autoPlay
+                loop
+                muted
+                onError={(e) =>
+                  console.error(
+                    'video in how-to-use section is not rendering',
+                    e,
+                  )
+                }>
+                <source
+                  src={`/media/videos/manager-tab.webm`}
+                  type="video/webm"
+                />
+              </video>
+            )}
           </div>
         </div>
       </ViewContainer>
