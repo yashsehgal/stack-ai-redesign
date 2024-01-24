@@ -7,6 +7,7 @@ import {
   CTAHeadline,
   FeatureCard,
   FeatureContentProps,
+  FeatureIcon,
 } from '../ui';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
@@ -30,7 +31,7 @@ const HowToUseStepsList: Array<FeatureContentProps & { option: StepType }> = [
   {
     option: 'logs',
     icon: 'stats',
-    title: 'Stats and Logs',
+    title: 'Stats & Logs',
     description:
       "Dive into comprehensive logs for a clear view of your project's journey.",
   },
@@ -110,6 +111,20 @@ export default function HowToUseSection() {
                 );
               },
             )}
+          </div>
+          <div className="how-to-use-steps-list-wrapper flex-row items-center justify-center gap-4 hidden max-md:flex w-full">
+            {HowToUseStepsList.map(
+              (
+                stepItem: FeatureContentProps & { option: StepType },
+                index: number,
+              ) => {
+                return <button key={index} className={cn("flex flex-col items-center gap-3 cursor-pointer select-none hover:brightness-100")}
+                  onClick={() => setStep(stepItem.option)}
+                >
+                  <FeatureIcon icon={stepItem.icon} className='w-16 h-16 hover:scale-95 transition-all active:scale-90' />
+                  <p className={cn("text-white", step === stepItem.option && "text-blue-500")}>{stepItem.title}</p>
+                </button>
+              })}
           </div>
         </div>
       </ViewContainer>
