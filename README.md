@@ -43,7 +43,7 @@ yarn dev
 After writing some code, make sure the apply prettier code formatting before pushing changes.
 
 ```
-yarn run lint-fix
+yarn run code-quality-fix
 ```
 
 ### Access the application
