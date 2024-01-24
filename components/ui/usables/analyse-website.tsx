@@ -34,7 +34,7 @@ export function AnalyseWebsiteUsableExample() {
             }}
             transition={{
               type: 'spring',
-              bounce: 0.65,
+              bounce: 0.5,
             }}>
             <Button
               variant="gloss"
