@@ -1,6 +1,7 @@
 'use client';
 import BasicFeatureSection from '@/components/sections/basic-features';
 import DataLoadersSection from '@/components/sections/data-loaders';
+import FeaturesBento from '@/components/sections/features-bento';
 import HowToUseSection from '@/components/sections/how-to-use';
 import ModelsUsedSection from '@/components/sections/models-used';
 import SecuritySection from '@/components/sections/security';
@@ -10,6 +11,7 @@ export default function LandingPage() {
     <div className="grid grid-cols-1 gap-4">
       <BasicFeatureSection />
       <HowToUseSection />
+      <FeaturesBento />
       <ModelsUsedSection />
       <SecuritySection />
       <DataLoadersSection />

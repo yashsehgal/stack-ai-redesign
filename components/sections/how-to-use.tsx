@@ -159,7 +159,7 @@ export default function HowToUseSection() {
                 autoPlay
                 loop
                 muted
-                className='shadow-xl rounded-lg'
+                className="shadow-xl rounded-lg"
                 onError={(e) =>
                   console.error(
                     'video in how-to-use section is not rendering',
@@ -179,7 +179,7 @@ export default function HowToUseSection() {
                 autoPlay
                 loop
                 muted
-                className='shadow-xl rounded-lg'
+                className="shadow-xl rounded-lg"
                 onError={(e) =>
                   console.error(
                     'video in how-to-use section is not rendering',
@@ -199,7 +199,7 @@ export default function HowToUseSection() {
                 autoPlay
                 loop
                 muted
-                className='shadow-xl rounded-lg'
+                className="shadow-xl rounded-lg"
                 onError={(e) =>
                   console.error(
                     'video in how-to-use section is not rendering',
@@ -216,7 +216,7 @@ export default function HowToUseSection() {
                 autoPlay
                 loop
                 muted
-                className='shadow-xl rounded-lg'
+                className="shadow-xl rounded-lg"
                 onError={(e) =>
                   console.error(
                     'video in how-to-use section is not rendering',

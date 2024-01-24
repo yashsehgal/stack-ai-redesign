@@ -3,4 +3,5 @@ export * from './button';
 export * from './logo';
 export * from './feature-icon';
 export * from './cta';
-export * from './feature-content';
+export * from './feature-card';
+export * from './bento-card';
