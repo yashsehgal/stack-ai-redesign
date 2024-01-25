@@ -10,7 +10,7 @@ const ViewContainer = forwardRef<HTMLDivElement, ViewContainerProps>(
         ref={ref}
         className={cn(
           'box-border mx-auto',
-          'w-[1100px] max-2xl:w-[1200px] max-xl:w-[920px] max-lg:w-[680px] max-md:w-[440px] max-sm:w-[370px]',
+          'w-[1100px] max-2xl:w-[1200px] max-xl:w-[920px] max-lg:w-[680px] max-md:w-[440px] max-sm:w-[340px]',
           className,
         )}
         {...props}>

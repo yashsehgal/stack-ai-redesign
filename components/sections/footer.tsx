@@ -8,7 +8,9 @@ import { SocialLinkList, FooterLinks } from '@/common';
 
 export default function FooterSection() {
   return (
-    <SectionContainer id="footer" className="shadow-inner py-20 grid gap-24">
+    <SectionContainer
+      id="footer"
+      className="shadow-inner py-20 grid gap-24 bg-neutral-50">
       <ViewContainer className="footer-top-layer-container flex flex-row items-start justify-between max-lg:flex-col">
         <div className="company-cta-content-wrapper">
           <h2 className="leading-snug text-4xl font-semibold">
