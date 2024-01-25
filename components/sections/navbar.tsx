@@ -3,12 +3,10 @@ import {
   Button,
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
   StackAILogo,
   navigationMenuTriggerStyle,
 } from '@/components/ui';

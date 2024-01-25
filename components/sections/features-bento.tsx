@@ -1,6 +1,5 @@
 'use client';
 import { SectionContainer, ViewContainer } from '../layouts';
-import { CTAContainer, CTADescription, CTAHeadline } from '../ui';
 import {
   AnalyseReportsUsableExample,
   AnalyseWebsiteUsableExample,

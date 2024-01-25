@@ -15,13 +15,6 @@ import { useRouter } from 'next/navigation';
 
 export type StepType = 'build' | 'export' | 'logs' | 'manage';
 
-const StepVideo = {
-  build: 'build-tab.webm',
-  export: 'export-tab.webm',
-  logs: 'logs-tab.webm',
-  manage: 'manager-tab.webm',
-};
-
 const HowToUseStepsList: Array<FeatureContentProps & { option: StepType }> = [
   {
     option: 'build',
