@@ -167,11 +167,15 @@ function TestimonialCard({
       </div>
       <div className="testimonial-content-wrapper w-full h-full flex flex-col items-start gap-6 justify-center mt-2">
         <p className="text font-medium">{`\"${content}\"`}</p>
-        <div className='author-companyLogo-wrapper w-full flex flex-row items-center justify-end'>
+        <div className="author-companyLogo-wrapper w-full flex flex-row items-center justify-end">
           <Image
             src={companyLogo}
             alt="company-logo"
-            width={(fullName === "Michael Carvin" || fullName === "Tennison Chan") ? 100 : 60}
+            width={
+              fullName === 'Michael Carvin' || fullName === 'Tennison Chan'
+                ? 100
+                : 60
+            }
             height={60}
           />
         </div>
