@@ -57,7 +57,7 @@ export default function HeroSection() {
           </Button>
         </CTAList>
         <div
-          className="hero-dashboard-image-wrapper"
+          className="hero-dashboard-image-wrapper -mt-8"
           style={{
             perspective: '1000px',
           }}>
