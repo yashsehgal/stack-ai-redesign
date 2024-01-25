@@ -39,7 +39,7 @@ export function AnalyseReportsUsableExample() {
             {buttonState !== 'loading' && (
               <div className="files-wrapper flex flex-row items-center justify-start gap-2">
                 <div className="dummy-file file-one text-xs px-3 py-1.5 rounded-full bg-white border">
-                  {'file_one.pdf'}
+                  {'📊 revenue_jan.pdf'}
                 </div>
                 {!isFileSelected && (
                   <Button
@@ -63,7 +63,7 @@ export function AnalyseReportsUsableExample() {
                       bounce: 0.5,
                     }}
                     className="dummy-file file-two text-xs px-3 py-1.5 rounded-full bg-white border">
-                    {'file_two.pdf'}
+                    {'🧾 revenue_feb.pdf'}
                   </motion.div>
                 )}
               </div>

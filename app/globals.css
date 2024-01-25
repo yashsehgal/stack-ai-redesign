@@ -5,3 +5,14 @@
 * {
   @apply tracking-tight;
 }
+
+#cta-section {
+  background-color: white;
+  background-image: url('/media/cta-icons-bg.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#cta-section {
+  @apply bg-cover max-lg:bg-contain;
+}

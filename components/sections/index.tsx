@@ -7,3 +7,4 @@ export * from './data-loaders';
 export * from './features-bento';
 export * from './hero';
 export * from './testimonials';
+export * from './cta';

@@ -1,5 +1,6 @@
 'use client';
 import BasicFeatureSection from '@/components/sections/basic-features';
+import CTASection from '@/components/sections/cta';
 import DataLoadersSection from '@/components/sections/data-loaders';
 import FeaturesBento from '@/components/sections/features-bento';
 import HeroSection from '@/components/sections/hero';
@@ -19,6 +20,7 @@ export default function LandingPage() {
       <SecuritySection />
       <DataLoadersSection />
       <TestimonialSection />
+      <CTASection />
     </div>
   );
 }
