@@ -6,6 +6,7 @@ import HeroSection from '@/components/sections/hero';
 import HowToUseSection from '@/components/sections/how-to-use';
 import ModelsUsedSection from '@/components/sections/models-used';
 import SecuritySection from '@/components/sections/security';
+import TestimonialSection from '@/components/sections/testimonials';
 
 export default function LandingPage() {
   return (
@@ -17,6 +18,7 @@ export default function LandingPage() {
       <ModelsUsedSection />
       <SecuritySection />
       <DataLoadersSection />
+      <TestimonialSection />
     </div>
   );
 }

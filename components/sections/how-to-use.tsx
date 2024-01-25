@@ -26,7 +26,7 @@ const HowToUseStepsList: Array<FeatureContentProps & { option: StepType }> = [
   {
     option: 'build',
     icon: 'no-code',
-    title: 'Built',
+    title: 'Build',
     description:
       'Streamline your vision and construct with limitless possibilities.',
   },

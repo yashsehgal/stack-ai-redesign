@@ -6,3 +6,4 @@ export * from './models-used';
 export * from './data-loaders';
 export * from './features-bento';
 export * from './hero';
+export * from './testimonials';

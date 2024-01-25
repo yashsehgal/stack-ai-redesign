@@ -3,7 +3,7 @@ import { cn } from '@/helpers';
 import { BentoCard, Button } from '..';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { RefreshCcw, ReplyAll, Send } from 'lucide-react';
+import { RefreshCcw, Send } from 'lucide-react';
 
 type AnalyseWebsiteUsableExampleFlowType = 'default' | 'analysing' | 'rendered';
 
