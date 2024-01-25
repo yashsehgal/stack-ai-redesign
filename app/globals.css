@@ -16,3 +16,22 @@
 #cta-section {
   @apply bg-cover max-lg:bg-contain;
 }
+
+@media screen and (max-width: 1024px) {
+  #cta-section {
+    background-image: url('/media/cta-icons-bg-small.svg');
+    background-position-y: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #cta-section {
+    background-position-y: 12rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #cta-section {
+    background-position-y: 10rem;
+  }
+}
