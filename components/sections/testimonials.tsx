@@ -1,6 +1,14 @@
 'use client';
+import { cn } from '@/helpers';
 import { SectionContainer, ViewContainer } from '../layouts';
-import { CTAContainer, CTAHeadline } from '../ui';
+import {
+  Button,
+  CTAContainer,
+  CTADescription,
+  CTAHeadline,
+  CTAList,
+} from '../ui';
+import Image from 'next/image';
 
 export interface TestimonialCardProps
   extends React.HTMLAttributes<HTMLDivElement> {
@@ -84,19 +92,82 @@ const TestimonialList: TestimonialCardProps[] = [
 
 export default function TestimonialSection() {
   return (
-    <SectionContainer id="testimonials">
-      <ViewContainer className="grid grid-cols-1 gap-6">
-        <div className="testimonials-top-layer flex flex-row items-center justify-around">
-          <CTAContainer>
+    <SectionContainer id="testimonials" className="relative">
+      <ViewContainer className="flex flex-row items-start gap-12 max-lg:grid max-lg:items-center">
+        <div className="testimonials-top-layer grid gap-44 items-start justify-around max-lg:flex-col max-xl:items-start max-xl:gap-30 lg:sticky lg:top-36 max-lg:w-fit max-lg:mx-auto">
+          <CTAContainer className="">
             <CTAHeadline>We are working with amazing companies</CTAHeadline>
+            <CTADescription>
+              Discover the success stories of our collaborative journey with
+              outstanding companies. Hear firsthand experiences from our valued
+              partners who have benefited from the exceptional services and
+              solutions we provide.
+            </CTADescription>
+            <CTAList>
+              <Button variant="gloss" withArrow size="lg">
+                {'Start Exploring'}
+              </Button>
+            </CTAList>
           </CTAContainer>
-          <TestimonialCard {...TestimonialList[0]} />
+          <TestimonialCard {...TestimonialList[0]} className="max-lg:hidden" />
         </div>
+        <div className="grid testimonials-bottom-layer-grid-wrapper gap-x-12 gap-y-16 max-lg:w-fit max-lg:mx-auto max-lg:mt-12">
+          <TestimonialCard {...TestimonialList[0]} className="lg:hidden" />
+          {TestimonialList.map(
+            (testimonial: TestimonialCardProps, index: number) => {
+              if (index) {
+                return <TestimonialCard {...testimonial} key={index} />;
+              }
+            },
+          )}
+        </div>
+        <CTAList className="lg:hidden">
+          <Button size="lg" withArrow>
+            Get a Demo
+          </Button>
+        </CTAList>
       </ViewContainer>
     </SectionContainer>
   );
 }
 
-function TestimonialCard(data: TestimonialCardProps) {
-  return <div></div>;
+function TestimonialCard({
+  className,
+  content,
+  avatar,
+  fullName,
+  designation,
+  companyLogo,
+  ...args
+}: TestimonialCardProps) {
+  return (
+    <div
+      className={cn(
+        'testimonial-card relative border rounded-3xl py-6 px-10 max-w-[600px]',
+        className,
+      )}
+      {...args}>
+      <div className="testimonial-author-details-container flex flex-row items-center justify-between absolute -top-8">
+        <div className="author-details-wrapper p-2 bg-white flex flex-row items-center gap-2">
+          <Image
+            src={avatar}
+            alt={fullName}
+            className="rounded-full"
+            width={40}
+            height={40}
+            priority
+          />
+          <div className="author-name-designation-wrapper flex flex-col items-start gap-1">
+            <p className="text-sm font-medium">{fullName}</p>
+            <p className="text-xs font-medium text-neutral-500">
+              {designation}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="testimonial-content-wrapper w-full h-full flex flex-col items-start gap-6 justify-center mt-2">
+        <p className="text font-medium">{`\"${content}\"`}</p>
+      </div>
+    </div>
+  );
 }
