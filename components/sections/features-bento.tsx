@@ -13,7 +13,7 @@ export default function FeaturesBento() {
         <div>
           <h2 className="font-bold text-center text-6xl max-lg:text-4xl max-md:text-3xl">
             There&apos;re a lot of magical <br />
-            things you can do 🔮
+            things you can do
           </h2>
           <p className="text-center text-neutral-500 mt-8">
             Discover endless possibilities with a myriad of enchanting feats at

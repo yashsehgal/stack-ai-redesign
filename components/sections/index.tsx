@@ -8,4 +8,5 @@ export * from './features-bento';
 export * from './hero';
 export * from './testimonials';
 export * from './cta';
+export * from './get-started-docs';
 export * from './footer';

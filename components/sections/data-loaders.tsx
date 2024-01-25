@@ -18,7 +18,7 @@ const DataLoadersList = [
 export default function DataLoadersSection() {
   return (
     <SectionContainer id="data-loaders">
-      <ViewContainer className="flex flex-row items-center justify-around max-lg:flex-col max-xl:items-start max-xl:gap-12">
+      <ViewContainer className="flex flex-row-reverse items-center justify-around max-lg:flex-col max-xl:items-start max-xl:gap-12">
         <CTAContainer>
           <CTAHeadline>Connect with your Data, wherever it sits...</CTAHeadline>
           <CTADescription>
