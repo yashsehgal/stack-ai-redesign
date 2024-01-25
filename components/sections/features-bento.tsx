@@ -4,6 +4,7 @@ import {
   AnalyseReportsUsableExample,
   AnalyseWebsiteUsableExample,
 } from '../ui/usables';
+import AppsConnectedUsableExample from '../ui/usables/apps-connected';
 import UsageOptionsUsableExample from '../ui/usables/usage-options';
 
 export default function FeaturesBento() {
@@ -24,6 +25,7 @@ export default function FeaturesBento() {
           <AnalyseWebsiteUsableExample />
           <AnalyseReportsUsableExample />
           <UsageOptionsUsableExample />
+          <AppsConnectedUsableExample />
         </div>
       </ViewContainer>
     </SectionContainer>
