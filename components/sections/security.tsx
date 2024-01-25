@@ -1,14 +1,6 @@
 'use client';
 import { SectionContainer, ViewContainer } from '../layouts';
-import {
-  Button,
-  CTAContainer,
-  CTADescription,
-  CTAHeadline,
-  CTAList,
-  FeatureCard,
-  FeatureContentProps,
-} from '../ui';
+import { Button, CTAList, FeatureCard, FeatureContentProps } from '../ui';
 
 const SecurityFeaturesList: FeatureContentProps[] = [
   {
@@ -52,17 +44,20 @@ const SecurityFeaturesList: FeatureContentProps[] = [
 export default function SecuritySection() {
   return (
     <SectionContainer id="security" className="bg-black">
-      <ViewContainer className="flex flex-row items-start justify-between max-lg:grid max-lg:gap-24 max-xl:relative">
-        <CTAContainer className="max-xl:sticky max-xl:top-36 max-lg:top-0 max-lg:relative">
-          <CTAHeadline sectionTheme="dark">
-            Secure AI applications for every Enterprise
-          </CTAHeadline>
-          <CTADescription sectionTheme="dark">
+      <ViewContainer className="grid gap-24 max-lg:grid max-lg:gap-24">
+        <div className="flex flex-col items-center justify-center">
+          <h2 className="text-white font-bold text-center text-6xl max-lg:text-4xl max-md:text-3xl">
+            Secure AI applications <br />
+            for every Enterprise
+          </h2>
+          <p className="text-center text-neutral-500 mt-8">
             We prioritize security and privacy for your company. Ensure safe
-            connectivity with your databases, while maintaining stringent
-            controls over data processing.
-          </CTADescription>
-          <CTAList>
+            connectivity
+            <br />
+            with your databases, while maintaining stringent controls over data
+            processing.
+          </p>
+          <CTAList className="mt-12">
             <Button
               variant="gloss"
               withArrow
@@ -71,12 +66,17 @@ export default function SecuritySection() {
               Start for free
             </Button>
           </CTAList>
-        </CTAContainer>
-        <div className="security-features-content-grid grid grid-cols-2 items-start gap-12 max-xl:grid-cols-1 max-lg:grid-cols-2 max-md:grid-cols-1 max-lg:w-fit max-lg:mx-auto">
+        </div>
+        <div className="security-features-content-grid grid grid-cols-3 xl:gap-24 w-fit mx-auto items-start gap-12  max-xl:grid-cols-2 max-md:grid-cols-1 max-lg:w-fit max-lg:mx-auto">
           {SecurityFeaturesList.map(
             (feature: FeatureContentProps, index: number) => {
               return (
-                <FeatureCard key={index} {...feature} sectionTheme="dark" />
+                <FeatureCard
+                  key={index}
+                  {...feature}
+                  sectionTheme="dark"
+                  className="items-center *:text-center"
+                />
               );
             },
           )}
