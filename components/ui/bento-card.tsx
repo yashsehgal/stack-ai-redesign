@@ -10,18 +10,18 @@ export interface BentoCardProps extends React.HTMLAttributes<HTMLDivElement> {
 export const BentoCard = forwardRef<HTMLDivElement, BentoCardProps>(
   ({ className, headline, description, ...args }, ref) => {
     return (
-      <div className="bento-content-wrapper flex flex-col items-start gap-4 max-lg:items-center">
+      <div className="bento-content-wrapper flex flex-col items-center gap-4 max-lg:items-center">
         <div className="bento-card-details-wrapper">
           <h3
             className={cn(
-              'feature-card-title text-xl font-medium max-lg:text-center max-lg:w-fit max-lg:mx-auto',
+              'feature-card-title text-xl font-medium text-center max-lg:w-fit max-lg:mx-auto',
             )}>
             {headline}
           </h3>
           {description && (
             <p
               className={cn(
-                'feature-card-description text-sm text-neutral-500 leading-6 max-lg:text-center max-lg:mx-auto mt-2',
+                'feature-card-description text-sm text-neutral-500 leading-6 text-center max-lg:mx-auto mt-2',
               )}>
               {description}
             </p>

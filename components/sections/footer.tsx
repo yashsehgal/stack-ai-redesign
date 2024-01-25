@@ -4,26 +4,7 @@ import { SectionContainer, ViewContainer } from '../layouts';
 import { StackAILogo } from '../ui';
 import Image from 'next/image';
 import { cn } from '@/helpers';
-
-const FooterLinks = {
-  SolutionLinks: ['AI Assistants', 'Workflow automation', 'Chatbots'],
-  SupportLinks: ['Pricing', 'Documentation', 'Tutorials', 'Status Page'],
-  CompanyLinks: [
-    'About',
-    'Blog',
-    'Careers',
-    'Stack AI Affiliate',
-    'Stack AI Certified',
-  ],
-  LegalLinks: [
-    'Privacy',
-    'Terms',
-    'OpenAI DPA',
-    'Anthropic DPA',
-    'SOC 2 Report',
-    'Sign BAA with us',
-  ],
-};
+import { SocialLinkList, FooterLinks } from '@/common';
 
 export default function FooterSection() {
   return (
@@ -116,25 +97,6 @@ export default function FooterSection() {
     </SectionContainer>
   );
 }
-
-const SocialLinkList: { icon: string; link: string }[] = [
-  {
-    icon: 'discord',
-    link: '#',
-  },
-  {
-    icon: 'linkedin',
-    link: '#',
-  },
-  {
-    icon: 'twitter',
-    link: '#',
-  },
-  {
-    icon: 'youtube',
-    link: '#',
-  },
-];
 
 function SocialLinks({
   className,

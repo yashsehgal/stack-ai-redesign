@@ -14,7 +14,7 @@ export function AnalyseWebsiteUsableExample() {
   return (
     <BentoCard
       className={cn('h-[300px] w-[360px]')}
-      headline="Create personal assitants from websites"
+      headline="Create assitants from websites"
       description="Scrap websites and train your assitants">
       {flow === 'rendered' ? (
         <AnalyzedAssistantScreen setFlow={setFlow} />
