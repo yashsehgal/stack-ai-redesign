@@ -4,7 +4,9 @@ import { Button, CTAList } from '../ui';
 
 export default function CTASection() {
   return (
-    <SectionContainer id="cta-section" className="xl:h-[460px]">
+    <SectionContainer
+      id="cta-section"
+      className="xl:h-[460px] border-b border-b-neutral-100">
       <ViewContainer>
         <div className="cta-content-wrapper flex flex-col items-center gap-3">
           <h1 className="leading-snug font-bold text-6xl max-lg:text-5xl max-md:text-3xl">
