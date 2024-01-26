@@ -8,7 +8,7 @@ export default function CTASection() {
       id="cta-section"
       className="xl:h-[460px] border-b border-b-neutral-100">
       <ViewContainer>
-        <div className="cta-content-wrapper flex flex-col items-center gap-3">
+        <div className="cta-content-wrapper flex flex-col items-center gap-3 -mt-12">
           <h1 className="leading-snug font-bold text-6xl max-lg:text-5xl max-md:text-3xl">
             A plan to fit your needs
           </h1>
