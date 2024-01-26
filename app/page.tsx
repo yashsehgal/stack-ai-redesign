@@ -1,5 +1,6 @@
 'use client';
 import BasicFeatureSection from '@/components/sections/basic-features';
+import BuildIdeaSection from '@/components/sections/build-ideas';
 import CTASection from '@/components/sections/cta';
 import DataLoadersSection from '@/components/sections/data-loaders';
 import FeaturesBento from '@/components/sections/features-bento';
@@ -13,11 +14,12 @@ import TestimonialSection from '@/components/sections/testimonials';
 
 export default function LandingPage() {
   return (
-    <div className="grid grid-cols-1 gap-12">
+    <div className="grid grid-cols-1 gap-12 max-md:gap-6">
       <HeroSection />
       <BasicFeatureSection />
       <FeaturesBento />
       <HowToUseSection />
+      <BuildIdeaSection />
       <ModelsUsedSection />
       <GetStartedWithDocumentationSection />
       <SecuritySection />
