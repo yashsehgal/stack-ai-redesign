@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { SectionContainer, ViewContainer } from '../layouts';
+import { ScreenMockup, SectionContainer, ViewContainer } from '../layouts';
 import {
   Button,
   CTAContainer,
@@ -13,7 +13,7 @@ export default function GetStartedWithDocumentationSection() {
   return (
     <SectionContainer id="get-started-with-docs">
       <ViewContainer className="flex flex-row items-center justify-center gap-24">
-        <div className="docs-demo-image-wrapper rounded-3xl border w-fit h-fit overflow-hidden p-4 -ml-[400px] max-lg:hidden shadow-xl shadow-neutral-100">
+        <ScreenMockup className="-ml-[400px]">
           <Image
             src="/media/docs-demo.svg"
             alt="get-started-with-docs-example-screenshot"
@@ -22,7 +22,7 @@ export default function GetStartedWithDocumentationSection() {
             width={1000}
             height={700}
           />
-        </div>
+        </ScreenMockup>
         <div className="docs-section-content-wrapper">
           <CTAContainer>
             <CTAHeadline>Dive into Our Comprehensive Documentation</CTAHeadline>

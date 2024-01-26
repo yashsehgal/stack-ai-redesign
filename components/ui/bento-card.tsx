@@ -5,12 +5,17 @@ import { forwardRef } from 'react';
 export interface BentoCardProps extends React.HTMLAttributes<HTMLDivElement> {
   headline: string;
   description?: string;
+  stretch?: boolean;
 }
 
 export const BentoCard = forwardRef<HTMLDivElement, BentoCardProps>(
-  ({ className, headline, description, ...args }, ref) => {
+  ({ className, headline, description, stretch = false, ...args }, ref) => {
     return (
-      <div className="bento-content-wrapper flex flex-col items-center gap-4 max-lg:items-center">
+      <div
+        className={cn(
+          'bento-content-wrapper flex flex-col items-center gap-4 max-lg:items-center',
+          stretch && 'w-full',
+        )}>
         <div className="bento-card-details-wrapper">
           <h3
             className={cn(

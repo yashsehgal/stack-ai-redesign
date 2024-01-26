@@ -5,6 +5,7 @@ import {
   AnalyseWebsiteUsableExample,
 } from '../ui/usables';
 import AppsConnectedUsableExample from '../ui/usables/apps-connected';
+import LogReportsUsableExample from '../ui/usables/logs';
 import UsageOptionsUsableExample from '../ui/usables/usage-options';
 
 export default function FeaturesBento() {
@@ -25,7 +26,15 @@ export default function FeaturesBento() {
           <AnalyseWebsiteUsableExample />
           <AnalyseReportsUsableExample />
           <UsageOptionsUsableExample />
-          <AppsConnectedUsableExample />
+          <div className="xl:hidden">
+            <AppsConnectedUsableExample />
+          </div>
+        </div>
+        <div className="mt-12 flex flex-row items-start justify-center max-xl:mt-24 w-fit mx-auto gap-4">
+          <div className="max-xl:hidden w-fit">
+            <AppsConnectedUsableExample />
+          </div>
+          <LogReportsUsableExample />
         </div>
       </ViewContainer>
     </SectionContainer>

@@ -6,6 +6,10 @@
   @apply tracking-tight;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 #cta-section {
   background-color: white;
   background-image: url('/media/cta-icons-bg.svg');

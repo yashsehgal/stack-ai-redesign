@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { SectionContainer, ViewContainer } from '../layouts';
 import {
   Button,
@@ -50,9 +51,11 @@ export default function BasicFeatureSection() {
             few clicks.
           </CTADescription>
           <CTAList>
-            <Button size="lg" withArrow>
-              Get Started
-            </Button>
+            <Link href="#features-bento">
+              <Button size="lg" withArrow>
+                Experience Stack AI
+              </Button>
+            </Link>
           </CTAList>
         </CTAContainer>
         <div className="feature-content-grid grid grid-cols-2 items-start gap-12 max-xl:grid-cols-1 max-lg:grid-cols-2 max-md:grid-cols-1 max-lg:w-fit max-lg:mx-auto">
