@@ -10,7 +10,7 @@ export default function FooterSection() {
   return (
     <SectionContainer
       id="footer"
-      className="border-t border-neutral-100 py-20 grid gap-24">
+      className="border-t border-neutral-200 py-20 grid gap-24">
       <ViewContainer className="footer-top-layer-container flex flex-row items-start justify-between max-lg:flex-col">
         <div className="company-cta-content-wrapper">
           <h2 className="leading-snug text-4xl font-semibold">
