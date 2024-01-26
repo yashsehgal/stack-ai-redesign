@@ -10,6 +10,23 @@
   scroll-behavior: smooth;
 }
 
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 #cta-section {
   background-color: white;
   background-image: url('/media/cta-icons-bg.svg');

@@ -9,6 +9,7 @@ import GetStartedWithDocumentationSection from '@/components/sections/get-starte
 import HeroSection from '@/components/sections/hero';
 import HowToUseSection from '@/components/sections/how-to-use';
 import ModelsUsedSection from '@/components/sections/models-used';
+import PartnerSection from '@/components/sections/partners';
 import SecuritySection from '@/components/sections/security';
 import TestimonialSection from '@/components/sections/testimonials';
 
@@ -22,6 +23,7 @@ export default function LandingPage() {
       <BuildIdeaSection />
       <ModelsUsedSection />
       <GetStartedWithDocumentationSection />
+      <PartnerSection />
       <SecuritySection />
       <DataLoadersSection />
       <TestimonialSection />
