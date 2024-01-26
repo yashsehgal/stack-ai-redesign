@@ -6,3 +6,5 @@ export * from './cta';
 export * from './feature-card';
 export * from './bento-card';
 export * from './icon-content-wrapper';
+export * from './sidebar-menu';
+export * from './sheet';
