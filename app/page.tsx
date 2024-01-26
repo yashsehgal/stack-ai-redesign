@@ -3,6 +3,7 @@ import BasicFeatureSection from '@/components/sections/basic-features';
 import CTASection from '@/components/sections/cta';
 import DataLoadersSection from '@/components/sections/data-loaders';
 import FeaturesBento from '@/components/sections/features-bento';
+import FooterSection from '@/components/sections/footer';
 import GetStartedWithDocumentationSection from '@/components/sections/get-started-docs';
 import HeroSection from '@/components/sections/hero';
 import HowToUseSection from '@/components/sections/how-to-use';
@@ -22,6 +23,7 @@ export default function LandingPage() {
       <SecuritySection />
       <DataLoadersSection />
       <TestimonialSection />
+      <FooterSection />
       <CTASection />
     </div>
   );

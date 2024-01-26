@@ -10,7 +10,7 @@ export default function FooterSection() {
   return (
     <SectionContainer
       id="footer"
-      className="shadow-inner py-20 grid gap-24 bg-neutral-50">
+      className="border-t border-neutral-100 py-20 grid gap-24">
       <ViewContainer className="footer-top-layer-container flex flex-row items-start justify-between max-lg:flex-col">
         <div className="company-cta-content-wrapper">
           <h2 className="leading-snug text-4xl font-semibold">
@@ -88,7 +88,7 @@ export default function FooterSection() {
           </div>
         </div>
       </ViewContainer>
-      <ViewContainer className="footer-bottom-layer-container flex flex-row items-center justify-between border-t border-t-neutral-200 pt-8 select-none cursor-default">
+      <ViewContainer className="footer-bottom-layer-container flex flex-row items-center justify-between border-t border-t-neutral-100 pt-8 select-none cursor-default">
         <div className="logo-wrapper">
           <StackAILogo />
         </div>
