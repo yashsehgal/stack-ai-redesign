@@ -46,6 +46,8 @@ export const SidebarMenuContainer = forwardRef<
   );
 });
 
+SidebarMenuContainer.displayName = 'SidebarMenuContainer';
+
 export const SidebarMenu = forwardRef<HTMLDivElement, SidebarMenuProps>(
   ({ className, children, trigger, icon = null, ...props }, ref) => {
     const [open, setOpen] = useState<boolean>(false);
@@ -73,6 +75,8 @@ export const SidebarMenu = forwardRef<HTMLDivElement, SidebarMenuProps>(
   },
 );
 
+SidebarMenu.displayName = 'SidebarMenu';
+
 const SidebarMenuTrigger = forwardRef<
   HTMLButtonElement,
   SidebarMenuTriggerProps
@@ -93,6 +97,8 @@ const SidebarMenuTrigger = forwardRef<
   );
 });
 
+SidebarMenuTrigger.displayName = 'SidebarMenuTrigger';
+
 export const SidebarMenuContent = forwardRef<
   HTMLDivElement,
   SidebarMenuContentProps
@@ -110,6 +116,8 @@ export const SidebarMenuContent = forwardRef<
   );
 });
 
+SidebarMenuContent.displayName = 'SidebarMenuContent';
+
 export const SidebarMenuItem = forwardRef<
   HTMLButtonElement,
   SidebarMenuItemProps
@@ -126,6 +134,8 @@ export const SidebarMenuItem = forwardRef<
     </button>
   );
 });
+
+SidebarMenuItem.displayName = 'SidebarMenuItem';
 
 export const SidebarSubMenu = forwardRef<HTMLDivElement, SidebarSubMenuProps>(
   ({ className, children, trigger, icon = null, ...props }, ref) => {
@@ -154,6 +164,8 @@ export const SidebarSubMenu = forwardRef<HTMLDivElement, SidebarSubMenuProps>(
   },
 );
 
+SidebarSubMenu.displayName = 'SidebarSubMenu';
+
 const SidebarSubMenuTrigger = forwardRef<
   HTMLButtonElement,
   SidebarSubMenuTriggerProps
@@ -174,6 +186,8 @@ const SidebarSubMenuTrigger = forwardRef<
   );
 });
 
+SidebarSubMenuTrigger.displayName = 'SidebarSubMenuTrigger';
+
 export const SidebarSubMenuContent = forwardRef<
   HTMLDivElement,
   SidebarSubMenuContentProps
@@ -191,6 +205,8 @@ export const SidebarSubMenuContent = forwardRef<
   );
 });
 
+SidebarSubMenuContent.displayName = 'SidebarSubMenuContent';
+
 export const SidebarSubMenuItem = forwardRef<
   HTMLButtonElement,
   SidebarSubMenuItemProps
@@ -207,3 +223,5 @@ export const SidebarSubMenuItem = forwardRef<
     </button>
   );
 });
+
+SidebarSubMenuItem.displayName = 'SidebarSubMenuItem';
