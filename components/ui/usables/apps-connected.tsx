@@ -23,41 +23,45 @@ const ConnectedAppsListLayerThree = [
   '/data-loaders/postgres.svg',
   '/data-loaders/onedrive.svg',
   '/data-loaders/google-cloud.svg',
-  '/data-loaders/notion.svg',
+  '/data-loaders/snowflake.svg',
 ];
 
 export default function AppsConnectedUsableExample() {
   return (
-    <BentoCard
-      className={cn('h-[300px] w-[360px]')}
-      headline="Get super-powers from other apps"
-      description="Collection for apps including Notion, Zapier, etc.">
-      <div className="flex flex-col justify-between h-full">
-        <Marquee className="p-2 overflow-visible flex flex-row items-center gap-4">
-          <div className="connected-apps-layer-one flex flex-row items-stretch justify-between gap-4">
-            {ConnectedAppsListLayerOne.map((app: string, index: number) => {
-              return <AppCard logo={app} key={index} />;
-            })}
-          </div>
-        </Marquee>
-        <Marquee
-          className="p-2 overflow-visible flex flex-row items-center gap-4"
-          direction={'right'}>
-          <div className="connected-apps-layer-two flex flex-row items-stretch justify-between gap-4">
-            {ConnectedAppsListLayerTwo.map((app: string, index: number) => {
-              return <AppCard logo={app} key={index} />;
-            })}
-          </div>
-        </Marquee>
-        <Marquee className="p-2 overflow-visible flex flex-row items-center gap-4">
-          <div className="connected-apps-layer-three flex flex-row items-stretch justify-between gap-4">
-            {ConnectedAppsListLayerThree.map((app: string, index: number) => {
-              return <AppCard logo={app} key={index} />;
-            })}
-          </div>
-        </Marquee>
-      </div>
-    </BentoCard>
+    <div className="flex flex-col justify-between h-full w-[380px] flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+      <Marquee className="p-2 flex flex-row items-center overflow-hidden">
+        <div className="connected-apps-layer-one flex flex-row items-stretch justify-between gap-4">
+          {ConnectedAppsListLayerOne.map((app: string, index: number) => {
+            return <AppCard logo={app} key={index} />;
+          })}
+        </div>
+      </Marquee>
+      <Marquee
+        className="p-2 flex flex-row items-center overflow-hidden"
+        direction={'right'}>
+        <div className="connected-apps-layer-two flex flex-row items-stretch justify-between gap-4">
+          {ConnectedAppsListLayerTwo.map((app: string, index: number) => {
+            return <AppCard logo={app} key={index} />;
+          })}
+        </div>
+      </Marquee>
+      <Marquee className="p-2 flex flex-row items-center overflow-hidden">
+        <div className="connected-apps-layer-three flex flex-row items-stretch justify-between gap-4">
+          {ConnectedAppsListLayerThree.map((app: string, index: number) => {
+            return <AppCard logo={app} key={index} />;
+          })}
+        </div>
+      </Marquee>
+      <Marquee
+        className="p-2 flex flex-row items-center overflow-hidden"
+        direction="right">
+        <div className="connected-apps-layer-four flex flex-row items-stretch justify-between gap-4">
+          {ConnectedAppsListLayerOne.map((app: string, index: number) => {
+            return <AppCard logo={app} key={index} />;
+          })}
+        </div>
+      </Marquee>
+    </div>
   );
 }
 
