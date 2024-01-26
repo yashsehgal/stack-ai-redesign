@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { SectionContainer, ViewContainer } from '../layouts';
 import { Button, CTAList } from '../ui';
 import { useEffect, useState } from 'react';
-import { ChevronRight } from 'lucide-react';
 
 export default function HeroSection() {
   const [tiltDegree, setTiltDegree] = useState(30);

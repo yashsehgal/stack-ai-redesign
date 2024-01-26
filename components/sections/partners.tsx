@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { SectionContainer, ViewContainer } from '../layouts';
-import Marquee from 'react-fast-marquee';
 
 const PartnerCompanyLogos = [
   'actuate',

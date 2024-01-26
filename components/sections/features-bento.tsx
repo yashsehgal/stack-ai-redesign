@@ -4,8 +4,6 @@ import {
   AnalyseReportsUsableExample,
   AnalyseWebsiteUsableExample,
 } from '../ui/usables';
-import AppsConnectedUsableExample from '../ui/usables/apps-connected';
-import LogReportsUsableExample from '../ui/usables/logs';
 import UsageOptionsUsableExample from '../ui/usables/usage-options';
 
 export default function FeaturesBento() {

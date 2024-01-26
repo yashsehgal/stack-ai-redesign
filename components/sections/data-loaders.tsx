@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { SectionContainer, ViewContainer } from '../layouts';
 import { CTAContainer, CTADescription, CTAHeadline } from '../ui';
 import AppsConnectedUsableExample from '../ui/usables/apps-connected';
