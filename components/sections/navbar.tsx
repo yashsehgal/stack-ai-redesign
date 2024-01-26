@@ -10,60 +10,77 @@ import {
   NavigationMenuTrigger,
   StackAILogo,
   navigationMenuTriggerStyle,
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+  SidebarMenu,
+  SidebarMenuContainer,
+  SidebarMenuContent,
+  SidebarMenuItem,
+  SidebarSubMenu,
+  SidebarSubMenuContent,
+  SidebarSubMenuItem,
 } from '@/components/ui';
 import { ViewContainer } from '../layouts';
 import { cn } from '@/helpers';
+import { Menu } from 'lucide-react';
+import Link from 'next/link';
 
-const solutionOptions = [
-  {
-    title: 'Company',
-    href: '/solutions/company',
-    description: 'Description for Company option.',
-  },
+const SolutionOptions = [
   {
     title: 'Enterprise',
-    href: '/solutions/enterprise',
-    description: 'Description for Enterprise option.',
+    href: 'https://www.stack-ai.com/solutions/enterprise',
+    description: 'Enhance enterprise productivity with cutting-edge solutions.',
   },
   {
     title: 'SMB',
-    href: '/solutions/smb',
-    description: 'Description for SMB option.',
+    href: 'https://www.stack-ai.com/solutions/smb',
+    description:
+      'Optimize operations with tailored solutions for small and medium-sized businesses.',
   },
   {
     title: 'Startups',
-    href: '/solutions/startups',
-    description: 'Description for Startups option.',
+    href: 'https://www.stack-ai.com/solutions/startups',
+    description:
+      'Fuel startup growth with specialized solutions for unique challenges.',
   },
   {
     title: 'AI Assistants',
-    href: '/solutions/ai-assistants',
-    description: 'Description for AI Assistants option.',
+    href: 'https://www.stack-ai.com/solutions/assistants',
+    description:
+      'Experience the power of AI assistants for streamlined tasks and improved efficiency.',
   },
   {
     title: 'Workflow Automation',
-    href: '/solutions/workflow-automation',
-    description: 'Description for Workflow Automation option.',
+    href: 'https://www.stack-ai.com/solutions/workflow-automation',
+    description:
+      'Optimize workflows with automation solutions for simplicity and speed.',
   },
   {
     title: 'Chatbots',
-    href: '/solutions/chatbots',
-    description: 'Description for Chatbots option.',
+    href: 'https://www.stack-ai.com/solutions/chatbots',
+    description:
+      'Engage users seamlessly with intelligent chatbots for enhanced experiences.',
   },
   {
     title: 'Healthcare',
-    href: '/solutions/healthcare',
-    description: 'Description for Healthcare option.',
+    href: 'https://www.stack-ai.com/solutions/healthcare',
+    description:
+      'Revolutionize healthcare delivery with solutions improving patient care.',
   },
   {
     title: 'Education',
-    href: '/solutions/education',
-    description: 'Description for Education option.',
+    href: 'https://www.stack-ai.com/solutions/education',
+    description:
+      'Transform education through innovative solutions for interactive learning.',
   },
   {
     title: 'Manufacturing and Logistics',
-    href: '/solutions/manufacturing-logistics',
-    description: 'Description for Manufacturing and Logistics option.',
+    href: 'https://www.stack-ai.com/solutions/manufacturing',
+    description:
+      'Optimize manufacturing and logistics with solutions for efficiency.',
   },
 ];
 
@@ -80,7 +97,7 @@ export const Navbar: React.FunctionComponent = () => {
               <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
               <NavigationMenuContent className="bg-white">
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                  {solutionOptions.map((option) => (
+                  {SolutionOptions.map((option) => (
                     <ListItem
                       key={option.title}
                       title={option.title}
@@ -102,7 +119,51 @@ export const Navbar: React.FunctionComponent = () => {
             )}
           </NavigationMenuList>
         </NavigationMenu>
-        <div className="navbar-cta-wrapper flex flex-row items-center justify-end gap-3">
+        <div className="lg:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="secondary" className="p-2">
+                <Menu className="w-4 h-4" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent>
+              <SheetHeader>
+                <SheetTitle>Menu</SheetTitle>
+              </SheetHeader>
+              <div className="options w-full h-full flex flex-col justify-between py-12">
+                <div className="options-wrapper">
+                  <SidebarMenuContainer>
+                    <SidebarMenu trigger="Solutions">
+                      <SidebarMenuContent>
+                        {SolutionOptions.map((option) => (
+                          <SidebarMenuItem key={option.title}>
+                            <Link href={option.href} target="_blank">
+                              {option.title}
+                            </Link>
+                          </SidebarMenuItem>
+                        ))}
+                      </SidebarMenuContent>
+                    </SidebarMenu>
+                    <SidebarMenuContent>
+                      {['Pricing', 'Docs', 'Blog', 'Discord', 'Talk to us'].map(
+                        (option, index) => (
+                          <SidebarMenuItem key={index}>
+                            {option}
+                          </SidebarMenuItem>
+                        ),
+                      )}
+                    </SidebarMenuContent>
+                  </SidebarMenuContainer>
+                </div>
+                <div className="navbar-cta-wrapper grid gap-3">
+                  <Button variant="secondary">Login</Button>
+                  <Button variant="gloss">Get Started</Button>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
+        </div>
+        <div className="navbar-cta-wrapper flex flex-row items-center justify-end gap-3 max-lg:hidden">
           <Button variant="secondary">Login</Button>
           <Button>Get Started</Button>
         </div>
@@ -126,7 +187,7 @@ const ListItem = React.forwardRef<
           )}
           {...props}>
           <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground text-neutral-500">
             {children}
           </p>
         </a>
