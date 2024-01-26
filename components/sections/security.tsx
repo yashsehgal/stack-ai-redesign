@@ -52,7 +52,7 @@ const SecurityFeaturesList: FeatureContentProps[] = [
 export default function SecuritySection() {
   return (
     <SectionContainer id="security" className="bg-black">
-      <ViewContainer className="flex flex-row items-start justify-between max-lg:grid max-lg:gap-24 max-xl:relative">
+      <ViewContainer className="flex flex-row-reverse items-start justify-between max-lg:grid max-lg:gap-24 max-xl:relative">
         <CTAContainer className="max-xl:sticky max-xl:top-36 max-lg:top-0 max-lg:relative">
           <CTAHeadline sectionTheme="dark">
             Secure AI applications for every Enterprise
