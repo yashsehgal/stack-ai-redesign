@@ -27,12 +27,14 @@ export default function HeroSection() {
     <SectionContainer id="hero" className="pb-12">
       <ViewContainer>
         <div
-          className="announcement-cta-wrapper px-3 py-1 text-sm bg-neutral-100 hover:bg-neutral-200/60 border w-fit rounded-full flex flex-row items-center gap-2 cursor-pointer mx-auto mb-8 hover:gap-3 transition-all"
+          className="announcement-cta-wrapper pl-3 pr-1 py-1 text-sm bg-neutral-100 hover:bg-neutral-200/60 border w-fit rounded-full flex flex-row items-center gap-2 cursor-pointer mx-auto mb-8"
           onClick={() =>
             window.open('https://www.stack-ai.com/blog/ai-assistants')
           }>
-          {'Build for enterprises using Stack AI'}
-          <ChevronRight className="w-3 h-4" />
+          {'Build for Enterprises using Stack AI'}
+          <div className="flex flex-row px-3 py-1 bg-blue-500 text-white w-fit rounded-full text-xs">
+            new
+          </div>
         </div>
         <h1 className="hero-headline font-bold text-center text-6xl max-lg:text-4xl max-md:text-3xl">
           The No-Code <br />
