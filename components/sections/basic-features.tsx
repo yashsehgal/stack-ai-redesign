@@ -51,7 +51,7 @@ export default function BasicFeatureSection() {
             few clicks.
           </CTADescription>
           <CTAList>
-            <Link href="#features-bento" className='grid'>
+            <Link href="#features-bento" className="grid">
               <Button size="lg" withArrow>
                 Experience Stack AI
               </Button>

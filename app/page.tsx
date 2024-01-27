@@ -8,6 +8,7 @@ import FooterSection from '@/components/sections/footer';
 import GetStartedWithDocumentationSection from '@/components/sections/get-started-docs';
 import HeroSection from '@/components/sections/hero';
 import HowToUseSection from '@/components/sections/how-to-use';
+import InvestorSection from '@/components/sections/investors';
 import ModelsUsedSection from '@/components/sections/models-used';
 import PartnerSection from '@/components/sections/partners';
 import SecuritySection from '@/components/sections/security';
@@ -15,7 +16,7 @@ import TestimonialSection from '@/components/sections/testimonials';
 
 export default function LandingPage() {
   return (
-    <div className="grid grid-cols-1 gap-12 max-md:gap-6">
+    <div className="grid grid-cols-1 gap-8 max-md:gap-6">
       <HeroSection />
       <BasicFeatureSection />
       <FeaturesBento />
@@ -27,6 +28,7 @@ export default function LandingPage() {
       <SecuritySection />
       <DataLoadersSection />
       <TestimonialSection />
+      <InvestorSection />
       <FooterSection />
       <CTASection />
     </div>

@@ -12,3 +12,4 @@ export * from './get-started-docs';
 export * from './footer';
 export * from './build-ideas';
 export * from './partners';
+export * from './investors';
