@@ -20,11 +20,12 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="shortcut icon" href="/favicons/favicon.ico" />
+        <script async src="https://cdn.splitbee.io/sb.js" />
       </head>
       <body className={inter.className}>
         <Navbar />
         {children}
       </body>
-    </html >
+    </html>
   );
 }
