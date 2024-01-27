@@ -8,13 +8,20 @@
 (root)/
 ├── components/
 │   └── sections/
-│       ├── basic-features.tsx
-│       ├── data-loaders.tsx
-│       ├── features-bento.tsx
-│       ├── hero.tsx
-│       ├── how-to-use.tsx
-│       ├── models-used.tsx
-│       ├── navbar.tsx
-│       ├── security.tsx
-│       └── index.tsx
+│   │   ├── basic-features.tsx
+│   │   ├── data-loaders.tsx
+│   │   ├── certifications.tsx
+│   │   ├── partners.tsx
+│   │   ├── investors.tsx
+│   │   ├── cta.tsx
+│   │   ├── testimonials.tsx
+│   │   ├── get-started-docs.tsx
+│   │   ├── build-ideas.tsx
+│   │   ├── features-bento.tsx
+│   │   ├── hero.tsx
+│   │   ├── how-to-use.tsx
+│   │   ├── models-used.tsx
+│   │   ├── navbar.tsx
+│   │   ├── security.tsx
+│   │   └── index.tsx
 ```

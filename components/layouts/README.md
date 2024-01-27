@@ -10,5 +10,6 @@
 │   └── layouts/
 │       ├── section-container.tsx
 │       ├── view-container.tsx
+│       ├── screen-mockup.tsx
 │       └── index.tsx
 ```

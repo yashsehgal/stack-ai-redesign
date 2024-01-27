@@ -19,10 +19,20 @@ This folder contains various components that are crucial to the structure and de
 │   │   ├── feature-icon.tsx
 │   │   ├── logo.tsx
 │   │   ├── navigation-menu.tsx
+│   │   ├── sidebar-menu.tsx
+│   │   ├── icon-content-wrapper.tsx
+│   │   ├── sheet.tsx
 │   │   └── index.tsx
 │   ├── sections/
 │   │   ├── basic-features.tsx
 │   │   ├── data-loaders.tsx
+│   │   ├── certifications.tsx
+│   │   ├── partners.tsx
+│   │   ├── investors.tsx
+│   │   ├── cta.tsx
+│   │   ├── testimonials.tsx
+│   │   ├── get-started-docs.tsx
+│   │   ├── build-ideas.tsx
 │   │   ├── features-bento.tsx
 │   │   ├── hero.tsx
 │   │   ├── how-to-use.tsx
@@ -33,6 +43,7 @@ This folder contains various components that are crucial to the structure and de
 │   └── layouts/
 │       ├── section-container.tsx
 │       ├── view-container.tsx
+│       ├── screen-mockup.tsx
 │       └── index.tsx
 ```
 
