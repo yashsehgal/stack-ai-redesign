@@ -5,7 +5,7 @@ const InvestorCompanyLogos = ['yc.webp', 'soma.webp', 'gradient-ventures.svg'];
 
 export function InvestorSection() {
   return (
-    <SectionContainer id="investors" className="max-md:pt-12">
+    <SectionContainer id="investors" className="py-12">
       <ViewContainer>
         <h2 className="font-semibold text-2xl text-center">
           Backed By Visionaries
