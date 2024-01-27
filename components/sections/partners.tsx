@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { SectionContainer, ViewContainer } from '../layouts';
+import { SectionContainer, ViewContainer } from '@/components/layouts';
 
 const PartnerCompanyLogos = [
   'actuate',
@@ -12,7 +12,7 @@ const PartnerCompanyLogos = [
   'zumma',
 ];
 
-export default function PartnerSection() {
+export function PartnerSection() {
   return (
     <SectionContainer>
       <ViewContainer>

@@ -1,18 +1,18 @@
 'use client';
 import { ReactNode, useState } from 'react';
-import { SectionContainer, ViewContainer } from '../layouts';
+import { SectionContainer, ViewContainer } from '@/components/layouts';
 import { BuildIdeaContentData } from '@/common';
 import { motion } from 'framer-motion';
 import {
   IconContentWrapper,
   IconContentWrapperDescription,
   IconContentWrapperHeadline,
-} from '../ui';
+} from '@/components/ui';
 import Link from 'next/link';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import { cn } from '@/helpers';
 
-export default function BuildIdeaSection() {
+export function BuildIdeaSection() {
   return (
     <>
       <SectionContainer id="build-ideas" className="pb-8">

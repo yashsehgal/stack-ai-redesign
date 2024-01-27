@@ -1,5 +1,5 @@
 import { forwardRef } from 'react';
-import { FeatureIcon, FeatureIconType } from '.';
+import { FeatureIcon, FeatureIconType } from '@/components/ui';
 import { cn } from '@/helpers';
 
 export interface FeatureContentProps

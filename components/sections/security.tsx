@@ -1,5 +1,5 @@
 'use client';
-import { SectionContainer, ViewContainer } from '../layouts';
+import { SectionContainer, ViewContainer } from '@/components/layouts';
 import {
   Button,
   CTAContainer,
@@ -8,7 +8,7 @@ import {
   CTAList,
   FeatureCard,
   FeatureContentProps,
-} from '../ui';
+} from '@/components/ui';
 
 const SecurityFeaturesList: FeatureContentProps[] = [
   {
@@ -49,7 +49,7 @@ const SecurityFeaturesList: FeatureContentProps[] = [
   },
 ];
 
-export default function SecuritySection() {
+export function SecuritySection() {
   return (
     <SectionContainer id="security" className="bg-black">
       <ViewContainer className="flex flex-row items-start justify-between gap-12 max-lg:grid max-lg:gap-24 max-xl:relative">

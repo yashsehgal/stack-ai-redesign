@@ -1,6 +1,10 @@
 'use client';
 import Image from 'next/image';
-import { ScreenMockup, SectionContainer, ViewContainer } from '../layouts';
+import {
+  ScreenMockup,
+  SectionContainer,
+  ViewContainer,
+} from '@/components/layouts';
 import {
   Button,
   CTAContainer,
@@ -19,20 +23,6 @@ type DocsContentBlockType = {
   headline: string;
   description: string;
 };
-
-/**
- * Get Inspiration
-Explore the possibilities of Stack AI.
-
-Builder guide
-Start building.
-
-Integrations
-Build interactive features and designs to guide your users.
-
-Index API Reference
-Upload data to your Knowledge Base programatically.
- */
 
 const DocsContentBlocks: DocsContentBlockType[] = [
   {
@@ -59,7 +49,7 @@ const DocsContentBlocks: DocsContentBlockType[] = [
   },
 ];
 
-export default function GetStartedWithDocumentationSection() {
+export function GetStartedWithDocumentationSection() {
   return (
     <SectionContainer id="get-started-with-docs">
       <ViewContainer className="flex flex-row items-center justify-center gap-24">

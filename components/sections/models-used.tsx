@@ -1,13 +1,13 @@
 'use client';
 import Image from 'next/image';
-import { SectionContainer, ViewContainer } from '../layouts';
+import { SectionContainer, ViewContainer } from '@/components/layouts';
 import {
   Button,
   CTAContainer,
   CTADescription,
   CTAHeadline,
   CTAList,
-} from '../ui';
+} from '@/components/ui';
 
 const CompanyLogoList = [
   'azure',
@@ -20,7 +20,7 @@ const CompanyLogoList = [
   'anthropic',
 ];
 
-export default function ModelsUsedSection() {
+export function ModelsUsedSection() {
   return (
     <SectionContainer id="models-from-companies">
       <ViewContainer className="flex flex-row items-center justify-between max-xl:flex-col max-xl:items-start max-xl:gap-12">

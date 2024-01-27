@@ -20,7 +20,7 @@ import {
   SidebarMenuContent,
   SidebarMenuItem,
 } from '@/components/ui';
-import { ViewContainer } from '../layouts';
+import { ViewContainer } from '@/components/layouts';
 import { cn } from '@/helpers';
 import { Menu } from 'lucide-react';
 import Link from 'next/link';

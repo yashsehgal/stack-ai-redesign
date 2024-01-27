@@ -1,9 +1,9 @@
 'use client';
-import { SectionContainer, ViewContainer } from '../layouts';
-import { CTAContainer, CTADescription, CTAHeadline } from '../ui';
-import AppsConnectedUsableExample from '../ui/usables/apps-connected';
+import { SectionContainer, ViewContainer } from '@/components/layouts';
+import { CTAContainer, CTADescription, CTAHeadline } from '@/components/ui';
+import { AppsConnectedUsableExample } from '@/components/ui/usables';
 
-export default function DataLoadersSection() {
+export function DataLoadersSection() {
   return (
     <SectionContainer id="data-loaders">
       <ViewContainer className="flex flex-row-reverse items-center justify-around max-lg:flex-col max-xl:items-center max-xl:gap-12">

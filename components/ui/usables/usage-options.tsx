@@ -1,9 +1,9 @@
 import { cn } from '@/helpers';
-import { BentoCard, Button } from '..';
+import { BentoCard, Button } from '@/components/ui';
 import { motion } from 'framer-motion';
 import { Rocket } from 'lucide-react';
 
-export default function UsageOptionsUsableExample() {
+export function UsageOptionsUsableExample() {
   return (
     <BentoCard
       className={cn('h-[300px] w-[360px]')}

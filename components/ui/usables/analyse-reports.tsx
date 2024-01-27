@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { BentoCard, Button } from '..';
+import { BentoCard, Button } from '@/components/ui';
 import { cn } from '@/helpers';
 import { AnimatePresence, motion } from 'framer-motion';
 import { RefreshCcw, Send } from 'lucide-react';

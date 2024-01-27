@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const CertificationData = ['gdpr', 'soc2', 'hipaa'];
 
-export default function CertificationsList() {
+export function CertificationsList() {
   return (
     <div className="flex flex-row items-center justify-start gap-6 mt-12">
       {CertificationData.map((certification: string, index: number) => {

@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import { SectionContainer, ViewContainer } from '../layouts';
+import { SectionContainer, ViewContainer } from '@/components/layouts';
 
 const InvestorCompanyLogos = ['yc.webp', 'soma.webp', 'gradient-ventures.svg'];
 
-export default function InvestorSection() {
+export function InvestorSection() {
   return (
     <SectionContainer id="investors" className="max-md:pt-12">
       <ViewContainer>

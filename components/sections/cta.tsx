@@ -1,8 +1,8 @@
 'use client';
-import { SectionContainer, ViewContainer } from '../layouts';
-import { Button, CTAList } from '../ui';
+import { SectionContainer, ViewContainer } from '@/components/layouts';
+import { Button, CTAList } from '@/components/ui';
 
-export default function CTASection() {
+export function CTASection() {
   return (
     <SectionContainer
       id="cta-section"

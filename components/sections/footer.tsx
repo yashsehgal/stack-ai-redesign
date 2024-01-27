@@ -2,14 +2,13 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-
-import { SectionContainer, ViewContainer } from '../layouts';
-import { StackAILogo } from '../ui';
+import { SectionContainer, ViewContainer } from '@/components/layouts';
+import { StackAILogo } from '@/components/ui';
 import { cn } from '@/helpers';
 import { SocialLinkList, FooterLinks } from '@/common';
-import CertificationsList from './certifications';
+import { CertificationsList } from '@/components/sections/certifications';
 
-const FooterSection: React.FC = () => {
+export function FooterSection() {
   const renderLinks = (category: string, links: string[]) => (
     <div className={`${category.toLowerCase()}-links-wrapper grid gap-2`}>
       <p className="text-sm font-medium">{category}</p>
@@ -68,7 +67,7 @@ const FooterSection: React.FC = () => {
       </ViewContainer>
     </SectionContainer>
   );
-};
+}
 
 // Define the SocialLinks component
 function SocialLinks({
@@ -96,6 +95,3 @@ function SocialLinks({
     </div>
   );
 }
-
-// Export the FooterSection component as the default export
-export default FooterSection;

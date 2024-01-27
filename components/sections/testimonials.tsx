@@ -1,13 +1,13 @@
 'use client';
 import { cn } from '@/helpers';
-import { SectionContainer, ViewContainer } from '../layouts';
+import { SectionContainer, ViewContainer } from '@/components/layouts';
 import {
   Button,
   CTAContainer,
   CTADescription,
   CTAHeadline,
   CTAList,
-} from '../ui';
+} from '@/components/ui';
 import Image from 'next/image';
 
 export interface TestimonialCardProps
@@ -90,7 +90,7 @@ const TestimonialList: TestimonialCardProps[] = [
   },
 ];
 
-export default function TestimonialSection() {
+export function TestimonialSection() {
   return (
     <SectionContainer id="testimonials" className="relative">
       <ViewContainer className="flex flex-row items-start gap-12 max-lg:grid max-lg:items-center">

@@ -13,3 +13,4 @@ export * from './footer';
 export * from './build-ideas';
 export * from './partners';
 export * from './investors';
+export * from './certifications';

@@ -1,12 +1,12 @@
 'use client';
-import { SectionContainer, ViewContainer } from '../layouts';
+import { SectionContainer, ViewContainer } from '@/components/layouts';
 import {
   AnalyseReportsUsableExample,
   AnalyseWebsiteUsableExample,
-} from '../ui/usables';
-import UsageOptionsUsableExample from '../ui/usables/usage-options';
+  UsageOptionsUsableExample,
+} from '@/components/ui/usables';
 
-export default function FeaturesBento() {
+export function FeaturesBento() {
   return (
     <SectionContainer id="features-bento">
       <ViewContainer>

@@ -1,10 +1,10 @@
 import { cn } from '@/helpers';
-import { BentoCard } from '..';
+import { BentoCard } from '@/components/ui';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { AnimatePresence } from 'framer-motion';
 
-export default function LogReportsUsableExample() {
+export function LogReportsUsableExample() {
   return (
     <BentoCard
       className={cn('h-[300px] w-[600px] max-md:w-[360px]')}

@@ -1,6 +1,6 @@
 'use client';
 import { cn } from '@/helpers';
-import { SectionContainer, ViewContainer } from '../layouts';
+import { SectionContainer, ViewContainer } from '@/components/layouts';
 import {
   CTAContainer,
   CTADescription,
@@ -8,10 +8,9 @@ import {
   FeatureCard,
   FeatureContentProps,
   FeatureIcon,
-} from '../ui';
+} from '@/components/ui';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { useRouter } from 'next/navigation';
 
 export type StepType = 'build' | 'export' | 'logs' | 'manage';
 
@@ -46,10 +45,9 @@ const HowToUseStepsList: Array<FeatureContentProps & { option: StepType }> = [
   },
 ];
 
-export default function HowToUseSection() {
+export function HowToUseSection() {
   const [step, setStep] = useState<StepType>('build');
   const [screenWidth, setScreenWidth] = useState<number>(0);
-  const router = useRouter();
 
   useEffect(() => {
     const updateScreenWidth = () => {

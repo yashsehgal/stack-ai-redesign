@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { SectionContainer, ViewContainer } from '../layouts';
+import { SectionContainer, ViewContainer } from '@/components/layouts';
 import {
   Button,
   CTAContainer,
@@ -9,7 +9,7 @@ import {
   CTAList,
   FeatureCard,
   FeatureContentProps,
-} from '../ui';
+} from '@/components/ui';
 
 const BasicFeatureList: FeatureContentProps[] = [
   {
@@ -38,7 +38,7 @@ const BasicFeatureList: FeatureContentProps[] = [
   },
 ];
 
-export default function BasicFeatureSection() {
+export function BasicFeatureSection() {
   return (
     <SectionContainer id="features">
       <ViewContainer className="flex flex-row items-start justify-between max-lg:grid max-lg:gap-24 max-xl:relative">

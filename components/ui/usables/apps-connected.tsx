@@ -1,6 +1,4 @@
 'use client';
-import { cn } from '@/helpers';
-import { BentoCard } from '..';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Marquee from 'react-fast-marquee';
@@ -26,7 +24,7 @@ const ConnectedAppsListLayerThree = [
   '/data-loaders/snowflake.svg',
 ];
 
-export default function AppsConnectedUsableExample() {
+export function AppsConnectedUsableExample() {
   return (
     <div className="flex flex-col justify-between h-full w-[380px] flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
       <Marquee className="p-2 flex flex-row items-center overflow-hidden">

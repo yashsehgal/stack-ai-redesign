@@ -1,10 +1,10 @@
 'use client';
 import Image from 'next/image';
-import { SectionContainer, ViewContainer } from '../layouts';
-import { Button, CTAList } from '../ui';
+import { SectionContainer, ViewContainer } from '@/components/layouts';
+import { Button, CTAList } from '@/components/ui';
 import { useEffect, useState } from 'react';
 
-export default function HeroSection() {
+export function HeroSection() {
   const [tiltDegree, setTiltDegree] = useState(30);
 
   useEffect(() => {
