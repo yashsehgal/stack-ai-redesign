@@ -16,7 +16,7 @@ import TestimonialSection from '@/components/sections/testimonials';
 
 export default function LandingPage() {
   return (
-    <div className="grid grid-cols-1 gap-8 max-md:gap-6">
+    <div className="grid grid-cols-1 gap-8 max-md:gap-0">
       <HeroSection />
       <BasicFeatureSection />
       <FeaturesBento />

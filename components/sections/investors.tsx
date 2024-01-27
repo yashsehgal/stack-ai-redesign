@@ -5,12 +5,12 @@ const InvestorCompanyLogos = ['yc.webp', 'soma.webp', 'gradient-ventures.svg'];
 
 export default function InvestorSection() {
   return (
-    <SectionContainer id="investors">
+    <SectionContainer id="investors" className="max-md:pt-12">
       <ViewContainer>
         <h2 className="font-semibold text-2xl text-center">
           Backed By Visionaries
         </h2>
-        <div className="grid grid-cols-3 justify-center items-center mt-24 max-md:grid-cols-2">
+        <div className="grid grid-cols-3 justify-center items-center mt-24 max-md:grid-cols-1 max-md:gap-12 max-md:mt-12">
           {InvestorCompanyLogos.map((logo: string, index: number) => {
             return (
               <Image

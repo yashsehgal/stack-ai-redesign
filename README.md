@@ -66,10 +66,20 @@ Now you have your Next.js project set up on your local machine, and you can star
 │   │   ├── feature-icon.tsx
 │   │   ├── logo.tsx
 │   │   ├── navigation-menu.tsx
+│   │   ├── sidebar-menu.tsx
+│   │   ├── icon-content-wrapper.tsx
+│   │   ├── sheet.tsx
 │   │   └── index.tsx
 │   ├── sections/
 │   │   ├── basic-features.tsx
 │   │   ├── data-loaders.tsx
+│   │   ├── certifications.tsx
+│   │   ├── partners.tsx
+│   │   ├── investors.tsx
+│   │   ├── cta.tsx
+│   │   ├── testimonials.tsx
+│   │   ├── get-started-docs.tsx
+│   │   ├── build-ideas.tsx
 │   │   ├── features-bento.tsx
 │   │   ├── hero.tsx
 │   │   ├── how-to-use.tsx
@@ -80,10 +90,15 @@ Now you have your Next.js project set up on your local machine, and you can star
 │   └── layouts/
 │       ├── section-container.tsx
 │       ├── view-container.tsx
+│       ├── screen-mockup.tsx
 │       └── index.tsx
 ├── helpers/
 │   ├── utils.ts
 │   └── index.ts
+├── common/
+│   ├── index.ts
+│   ├── react-constants.tsx
+│   ├── constants.ts
 ├── app/
 │   ├── favicon.ico
 │   ├── globals.css
